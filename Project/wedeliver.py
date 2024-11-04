@@ -6,8 +6,12 @@ class Driver:
 
 class WeDeliver:
     def __init__(self):
-        self.drivers = {}
-        self.nextDriverId = 1
+        self.drivers = {
+            1:Driver(1, "Max Verstappen", "Akkar"),
+            2:Driver(2, "Charles Leclerc", "Saida"),
+            3:Driver(3, "Lando Norris", "Jbeil")
+        }
+        self.nextDriverId = 4
         self.cityNetwork = {
             'Akkar': ['Beirut', 'Jbeil'],
             'Saida': ['Zahle'],
